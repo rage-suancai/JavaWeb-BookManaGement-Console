@@ -1,0 +1,6 @@
+7月 07, 2022 4:50:05 下午 book.manage.entity.Book lambda$addBook$0
+信息: 新添加了一条图书消息: Book(bid=0, title=老友记, desc=娱乐, price=160.66)
+7月 07, 2022 5:22:41 下午 book.manage.entity.Book lambda$addBorrow$1
+信息: 新添加了一条图书借阅信息: 1
+7月 07, 2022 5:24:20 下午 book.manage.entity.Book lambda$addBorrow$1
+信息: 新添加了一条图书借阅信息: 12
