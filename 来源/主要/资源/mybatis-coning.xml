@@ -11,13 +11,13 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/book_manage"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/"/>
+                <property name="username" value=""/>
+                <property name="password" value=""/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper class="book.manage.mapper.BookMapper" />
+        <mapper class=""/>
     </mappers>
 </configuration>
