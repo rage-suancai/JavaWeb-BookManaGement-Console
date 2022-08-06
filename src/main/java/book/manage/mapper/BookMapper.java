@@ -9,27 +9,27 @@ import java.util.List;
 
 public interface BookMapper {
 
-    @Insert("insert into student(name, sex, grade) values(#{name}, #{sex}, #{grade})")
+    @Insert("")
     int addStudent(Student student);
-    @Insert("insert into book(title, `desc`, price) values(#{title}, #{desc}, #{price})")
+    @Insert("")
     int addBook(Book book);
-    @Insert("insert into borrow(sid, bid) values(#{sid}, #{bid})")
+    @Insert("")
     int addBorrow(@Param("sid") int sid, @Param("bid") int bid);
 
-    @Select("select * from book")
+    @Select("")
     List<Book> getBookList();
-    @Select("select * from student")
+    @Select("")
     List<Student> getStudentList();
     @Results({
-            @Result(column = "id", property = "id", id = true),
-            @Result(column = "sid", property = "student", one = @One(select = "getStudentBySid")),
-            @Result(column = "bid", property = "book", one = @One(select = "getBookByBid"))
+            @Result(column = "", property = "", id = true),
+            @Result(column = "", property = "", one = @One(select = "")),
+            @Result(column = "", property = "", one = @One(select = ""))
     })
-    @Select("select * from borrow")
+    @Select("")
     List<Borrow> getBorrowList();
-    @Select("select * from student where sid = #{sid}")
+    @Select("")
     Student getStudentBySid(int sid);
-    @Select("select * from book where bid = #{bid}")
+    @Select("")
     Book getBookByBid(int bid);
 
 }
